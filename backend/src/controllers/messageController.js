@@ -1,4 +1,4 @@
-import e from "express";
+//import e from "express"; // Verificar se irá precisar disso
 import whatsappService from "../services/whatsappService.js"
 
 async function send(req, res){
