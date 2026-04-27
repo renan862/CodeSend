@@ -6,7 +6,7 @@ async function send(req, res){
     try{
         for(const number of contacts){
             await whatsappService.sendMessage(sessionName,number, message);
-            await new Promise(r => setTimeout(r, 4000));
+            await new Promise(r => setTimeout(r, 4000)); // Delay de 4 segundos entre o envio de cada mensagem. Mas mudarei para esta informção para puxar do bd 
         }
         
         res.json({ status: 'Messages sent successfully' });
